@@ -2,6 +2,12 @@
 
 Community Applications templates by CrazyDevil66.
 
+| App | Template | Support |
+| --- | --- | --- |
+| n8n | `templates/n8n.xml` | [Issues](https://github.com/CrazyDevil66/unraid-templates/issues) |
+| Angebots-tool | `templates/angebots-tool.xml` | [Issues](https://github.com/CrazyDevil66/Angebots-tool/issues) |
+| braincut-blur | `templates/braincut-blur.xml` | [Issues](https://github.com/CrazyDevil66/braincut-blur/issues) |
+
 ## n8n
 
 A plain template for [n8n](https://n8n.io). It uses the official `n8nio/n8n` image, unchanged, with n8n's own defaults. This template is community maintained and not affiliated with n8n.

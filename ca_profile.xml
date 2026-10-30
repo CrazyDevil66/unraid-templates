@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunityApplications>
-  <Profile>Unraid templates maintained by CrazyDevil66. Currently includes n8n: the official n8nio/n8n image with n8n's own defaults, running as Unraid's default user so no chown is needed. Templates here are community maintained and not affiliated with the upstream projects. Support: https://github.com/CrazyDevil66/unraid-templates/issues</Profile>
+  <Profile>Unraid templates maintained by CrazyDevil66: n8n (the official n8nio/n8n image with n8n's own defaults, no chown needed), Angebots-tool (self-hosted quotation tool) and braincut-blur (automatic face and license plate blurring for n8n video workflows, NVIDIA GPU required). The n8n template is community maintained and not affiliated with n8n. Support links are on each app.</Profile>
   <Icon>https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png</Icon>
   <WebPage>https://github.com/CrazyDevil66/unraid-templates</WebPage>
 </CommunityApplications>
