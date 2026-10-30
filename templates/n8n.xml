@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>n8n</Name>
+  <Repository>n8nio/n8n:stable</Repository>
+  <Registry>https://hub.docker.com/r/n8nio/n8n</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/CrazyDevil66/n8n-unraid/issues</Support>
+  <Project>https://n8n.io</Project>
+  <TemplateURL>https://raw.githubusercontent.com/CrazyDevil66/n8n-unraid/main/templates/n8n.xml</TemplateURL>
+  <Overview>n8n workflow automation, using the official n8nio/n8n image without changes. All settings are n8n's own defaults. Community template, not affiliated with n8n.
+
+SQLite is used, no separate database needed.
+
+The container runs as Unraid's default user (99:100), so appdata and your shares work without chown. This is set in Extra Parameters together with the advanced variables HOME and N8N_USER_FOLDER.
+
+Sign-in over plain HTTP: browsers reject n8n's default secure cookie. Set N8N_SECURE_COOKIE to false for LAN access without HTTPS.
+
+Your own shares: fill in an Extra Path. The Read/Write Files node may use the Extra Paths, n8n's file protection stays on. Code nodes also need NODE_FUNCTION_ALLOW_BUILTIN=fs,path.
+
+Updates: stable follows n8n's newest stable release, including major versions. To stay on one version, use a fixed tag such as n8nio/n8n:2.45.7.</Overview>
+  <Category>Productivity: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:5678]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png</Icon>
+  <ExtraParams>--user 99:100 --tmpfs /home/node/.cache:rw,mode=1777</ExtraParams>
+  <PostArgs/>
+  <Config Name="Web UI Port" Target="5678" Default="5678" Mode="tcp" Description="Port of the n8n editor." Type="Port" Display="always" Required="true" Mask="false">5678</Config>
+  <Config Name="AppData" Target="/home/node/.n8n" Default="/mnt/user/appdata/n8n" Mode="rw" Description="Database, encryption key and installed community nodes. Keep this folder in your backups." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/n8n</Config>
+  <Config Name="GENERIC_TIMEZONE" Target="GENERIC_TIMEZONE" Default="America/New_York" Mode="" Description="Time zone for schedule triggers. n8n default: America/New_York. Set your own, e.g. Europe/London." Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="N8N_SECURE_COOKIE" Target="N8N_SECURE_COOKIE" Default="true" Mode="" Description="n8n default: true. Set to false to sign in over plain HTTP." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="N8N_WEBHOOK_URL" Target="N8N_WEBHOOK_URL" Default="" Mode="" Description="Optional. Public URL with trailing slash, needed behind a reverse proxy or tunnel." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Extra Path 1" Target="/mnt/extra1" Default="" Mode="rw" Description="Optional. A share or folder for your workflows." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Extra Path 2" Target="/mnt/extra2" Default="" Mode="rw" Description="Optional. A share or folder for your workflows." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Extra Path 3" Target="/mnt/extra3" Default="" Mode="rw" Description="Optional. A share or folder for your workflows." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="N8N_RESTRICT_FILE_ACCESS_TO" Target="N8N_RESTRICT_FILE_ACCESS_TO" Default="/mnt/extra1;/mnt/extra2;/mnt/extra3" Mode="" Description="Container paths the Read/Write Files node may use, separated by semicolons. Do not leave empty: an empty value turns n8n's file protection off." Type="Variable" Display="advanced" Required="true" Mask="false">/mnt/extra1;/mnt/extra2;/mnt/extra3</Config>
+  <Config Name="NODE_FUNCTION_ALLOW_BUILTIN" Target="NODE_FUNCTION_ALLOW_BUILTIN" Default="" Mode="" Description="Optional. Node modules allowed in Code nodes, e.g. fs,path" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="N8N_USER_FOLDER" Target="N8N_USER_FOLDER" Default="/home/node" Mode="" Description="Required for running as 99:100. Do not change." Type="Variable" Display="advanced" Required="true" Mask="false">/home/node</Config>
+  <Config Name="HOME" Target="HOME" Default="/home/node/.n8n" Mode="" Description="Required for running as 99:100, used to install community nodes. Do not change." Type="Variable" Display="advanced" Required="true" Mask="false">/home/node/.n8n</Config>
+</Container>
