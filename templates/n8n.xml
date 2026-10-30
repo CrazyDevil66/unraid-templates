@@ -7,9 +7,9 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/CrazyDevil66/n8n-unraid/issues</Support>
+  <Support>https://github.com/CrazyDevil66/unraid-templates/issues</Support>
   <Project>https://n8n.io</Project>
-  <TemplateURL>https://raw.githubusercontent.com/CrazyDevil66/n8n-unraid/main/templates/n8n.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/CrazyDevil66/unraid-templates/main/templates/n8n.xml</TemplateURL>
   <Overview>n8n workflow automation, using the official n8nio/n8n image without changes. All settings are n8n's own defaults. Community template, not affiliated with n8n.
 
 SQLite is used, no separate database needed.

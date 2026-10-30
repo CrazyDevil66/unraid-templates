@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunityApplications>
-  <Profile>A plain Unraid template for n8n: the official n8nio/n8n image with n8n's own defaults, running as Unraid's default user so no chown is needed. Community maintained, not affiliated with n8n. Support: https://github.com/CrazyDevil66/n8n-unraid/issues</Profile>
+  <Profile>Unraid templates maintained by CrazyDevil66. Currently includes n8n: the official n8nio/n8n image with n8n's own defaults, running as Unraid's default user so no chown is needed. Templates here are community maintained and not affiliated with the upstream projects. Support: https://github.com/CrazyDevil66/unraid-templates/issues</Profile>
   <Icon>https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png</Icon>
-  <WebPage>https://github.com/CrazyDevil66/n8n-unraid</WebPage>
+  <WebPage>https://github.com/CrazyDevil66/unraid-templates</WebPage>
 </CommunityApplications>

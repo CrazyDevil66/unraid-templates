@@ -1,8 +1,12 @@
-# n8n for Unraid
+# Unraid templates
 
-A plain Community Applications template for [n8n](https://n8n.io). It uses the official `n8nio/n8n` image, unchanged, with n8n's own defaults. This template is community maintained and not affiliated with n8n.
+Community Applications templates by CrazyDevil66.
 
-## What the template adds
+## n8n
+
+A plain template for [n8n](https://n8n.io). It uses the official `n8nio/n8n` image, unchanged, with n8n's own defaults. This template is community maintained and not affiliated with n8n.
+
+### What the template adds
 
 The image runs as UID 1000, while Unraid creates folders for `99:100`, so n8n would fail to start with `EACCES`. Instead of a manual `chown`, the template runs the container as `99:100`:
 
@@ -13,7 +17,7 @@ The image runs as UID 1000, while Unraid creates folders for `99:100`, so n8n wo
 | `N8N_USER_FOLDER=/home/node` | Keeps the data at the usual `/home/node/.n8n` |
 | `HOME=/home/node/.n8n` | Needed to install community nodes |
 
-## Good to know
+### Good to know
 
 - **Time zone:** `GENERIC_TIMEZONE` is n8n's default, `America/New_York`. Set your own, or schedules run at the wrong time.
 - **Plain HTTP:** n8n's secure cookie blocks sign-in without HTTPS. Set `N8N_SECURE_COOKIE=false` for LAN access.
