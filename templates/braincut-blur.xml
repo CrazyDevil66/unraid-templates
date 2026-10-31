@@ -10,7 +10,7 @@
   <WebUI>http://[IP]:[PORT:8080]/docs</WebUI>
   <Support>https://github.com/CrazyDevil66/braincut-blur/issues</Support>
   <Project>https://github.com/CrazyDevil66/braincut-blur</Project>
-  <Category>Tools: Utility:</Category>
+  <Category>Tools:Utilities</Category>
   <TemplateURL>https://raw.githubusercontent.com/CrazyDevil66/unraid-templates/main/templates/braincut-blur.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/CrazyDevil66/braincut-blur/main/icon.png</Icon>
   <ExtraParams>--gpus all</ExtraParams>
@@ -28,6 +28,7 @@
   <Config Name="BrainCut Videodaten"
           Target="/data"
           Default="/mnt/user/n8n_automation/BrainCut"
+          Mode="rw"
           Description="Unraid-Pfad zum BrainCut-Ordner (Videomaterial)"
           Type="Path"
           Display="always"
@@ -37,6 +38,7 @@
   <Config Name="App-Daten"
           Target="/app/.cache"
           Default="/mnt/user/appdata/braincut-blur"
+          Mode="rw"
           Description="Container-Cache: TensorRT-Engine, Modelle. Wird beim ersten Start automatisch angelegt."
           Type="Path"
           Display="always"

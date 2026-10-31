@@ -21,7 +21,7 @@ Sign-in over plain HTTP: browsers reject n8n's default secure cookie. Set N8N_SE
 Your own shares: fill in an Extra Path. The Read/Write Files node may use the Extra Paths, n8n's file protection stays on. Code nodes also need NODE_FUNCTION_ALLOW_BUILTIN=fs,path.
 
 Updates: stable follows n8n's newest stable release, including major versions. To stay on one version, use a fixed tag such as n8nio/n8n:2.45.7.</Overview>
-  <Category>Productivity: Tools: Other:</Category>
+  <Category>Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:5678]/</WebUI>
   <Icon>https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png</Icon>
   <ExtraParams>--user 99:100 --tmpfs /home/node/.cache:rw,mode=1777</ExtraParams>

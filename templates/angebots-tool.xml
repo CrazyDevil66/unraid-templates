@@ -10,7 +10,7 @@
   <Support>https://github.com/CrazyDevil66/Angebots-tool/issues</Support>
   <Project>https://github.com/CrazyDevil66/Angebots-tool</Project>
   <Overview>Angebots-Tool zum Erstellen und Verwalten von Angeboten. Läuft als Node.js-Server mit persistentem Datenspeicher.</Overview>
-  <Category>Tools: Utility:</Category>
+  <Category>Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/CrazyDevil66/unraid-templates/main/templates/angebots-tool.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/CrazyDevil66/Angebots-tool/master/public/favicon.svg</Icon>
